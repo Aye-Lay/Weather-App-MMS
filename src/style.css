@@ -18,11 +18,11 @@ h1 {
   margin: 0;
 }
 
-strong {
+/* strong {
   padding: 29px;
   font-size: 38px;
   font-family: arial, sans-serif;
-}
+} */
 
 ul {
   margin: 0;
@@ -38,26 +38,32 @@ li {
   line-height: 16px;
   margin: 0px 5px 5px 0;
 }
-.temperature {
+/* .temperature {
   font-size: 44px;
   padding-left: 45px;
   font-weight: bold;
   font-family: arial, sans-serif;
   height: 20px;
+} */
+.temperature {
+  color: rgb(33, 33, 33);
+  font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
+  font-size: 40px;
+  font-weight: 600;
 }
 .unit {
   position: relative;
-  top: -30px;
-  font-size: 19px;
+  top: -25px;
+  font-size: 20px;
 }
 
-#celcius-link,
-#fahrenheit-link {
+#celcius-link
+/* #fahrenheit-link { */ {
   text-decoration: none;
 }
 
-#celcius-link:hover,
-#fahrenheit-link:hover {
+#celcius-link:hover
+/* #fahrenheit-link:hover { */ {
   text-decoration: underline;
 }
 
@@ -77,7 +83,7 @@ body div.card-border-weather {
   line-height: 60px;
 }
 
-form input.text-city {
+/* form input.text-city {
   background: #ccf9f8;
   border: 2px solid black;
   border-radius: 30px;
@@ -85,9 +91,9 @@ form input.text-city {
   padding: 9px;
   padding-left: 20px;
   opacity: 0.4;
-}
+} */
 
-form input.search {
+/* form input.search {
   color: black;
   background: #9eecfa;
   border: 3px solid #90ebf8;
@@ -95,7 +101,7 @@ form input.search {
   font-size: 20px;
   padding: 4px 5px;
   font-family: "Times New Roman", Times, serif;
-}
+} */
 
 div.forecast-day {
   font-size: 23px;

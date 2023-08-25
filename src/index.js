@@ -17,7 +17,7 @@ function getformatDate(date) {
     "Saturday",
   ];
   let day = days[date.getDay()];
-  return `${day}${hour}:${minute}`;
+  return `${day} ${hour}:${minute}`;
 }
 let currentDate = new Date();
 document.querySelector("#date").innerHTML = getformatDate(currentDate);

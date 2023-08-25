@@ -22,30 +22,44 @@
     <div class="container">
       <div class="card">
         <div class="card-border-city">
-          <h1 id="city"></h1>
-          <ul>
-            <li id="date"></li>
-            <li id="weather-description"></li>
-          </ul>
+          <div class="row">
+            <div class="col-9">
+              <h1 id="city"></h1>
+              <ul>
+                <li id="date"></li>
+                <li id="weather-description"></li>
+              </ul>
+            </div>
+            <div class="col-3">
+              <span class="temperature" id="temperature"></span>
+              <span class="unit">°C</span>
+            </div>
+          </div>
 
           <form id="search-form">
-            <input
-              type="text"
-              placeholder="Enter a city..."
-              class="input-city"
-              id="input-city"
-            />
-            <input
-              type="submit"
-              value="Search"
-              class="search"
-              id="search-input"
-            />
-            <span class="temperature" id="temperature"></span>
-            <span class="unit"
-              ><a href="#" id="celcius-link">°C |</a
-              ><a href="#" id="fahrenheit-link"> °F</a></span
-            >
+            <div class="row">
+              <div class="col-5">
+                <input
+                  type="search"
+                  placeholder="Enter a city..."
+                  class="form-control"
+                  autocomplete="off"
+                  id="input-city"
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  class="btn btn-primary w-100"
+                />
+              </div>
+
+              <div class="col-4">
+                <div>Humidity : <span id="humidity"></span>%</div>
+                <div>Wind : <span id="wind"></span>km/h</div>
+              </div>
+            </div>
           </form>
         </div>
       </div>
