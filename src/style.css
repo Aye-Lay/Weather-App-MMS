@@ -1,6 +1,17 @@
 body {
-  background: rgb(192, 225, 247);
+  background: rgb(11, 152, 247);
+  animation: mymove 4s infinite;
 }
+
+@keyframes mymove {
+  from {
+    background-color: rgb(15, 164, 250);
+  }
+  to {
+    background-color: rgb(40, 236, 250);
+  }
+}
+
 h1 {
   color: #1190f8;
   font-family: "Times New Roman", Times, serif;
@@ -97,4 +108,8 @@ div.forecast-temperature {
 }
 div.forecast-icon {
   font-size: 30px;
+}
+
+#open-source-code {
+  color: rgba(248, 9, 9, 0.692);
 }
