@@ -21,6 +21,27 @@ function getformatDate(timestamp) {
   return `${day} ${hour}:${minute}`;
 }
 
+function displayForcast() {
+  let forcastElement = document.querySelector("#forcast");
+  let forcastHTML = `<div class="row">`;
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  days.forEach(function (day) {
+    forcastHTML =
+      forcastHTML +
+      `<div class="col">
+                <div class="forecast-day">${day}</div>
+                <div class="forecast-temperature">27°</div>
+                <div class="forecast-icon">
+                  <i class="fa-sharp fa-solid fa-cloud"></i>
+                </div>
+              </div>
+        `;
+  });
+
+  forcastHTML = forcastHTML + `</div>`;
+  forcastElement.innerHTML = forcastHTML;
+}
+
 function displayWeatherCondition(response) {
   console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.city;
@@ -52,4 +73,5 @@ function searchForm(event) {
 }
 document.querySelector("#search-form").addEventListener("submit", searchForm);
 
-searchCity("New York");
+searchCity("Hpa-an");
+displayForcast();

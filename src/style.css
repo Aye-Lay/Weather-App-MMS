@@ -37,7 +37,7 @@ li::first-letter {
 }
 
 .temperature {
-  color: rgb(10, 165, 152);
+  color: rgb(5, 77, 71);
   font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
   font-size: 40px;
   font-weight: 600;
@@ -77,6 +77,8 @@ body div.card-border-weather {
 div.forecast-day {
   font-size: 23px;
   font-family: pt monospace;
+  color: #1190f8;
+  opacity: 0.8;
 }
 
 div.forecast-temperature {
