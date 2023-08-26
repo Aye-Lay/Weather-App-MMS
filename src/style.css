@@ -1,5 +1,5 @@
 body {
-  background: rgb(11, 152, 247);
+  background: rgb(7, 52, 82);
   animation: mymove 4s infinite;
 }
 
@@ -18,42 +18,33 @@ h1 {
   margin: 0;
 }
 
-/* strong {
-  padding: 29px;
-  font-size: 38px;
-  font-family: arial, sans-serif;
-} */
-
 ul {
   margin: 0;
   padding: 0;
+  margin-bottom: 10px;
 }
 li {
-  list-style: none;
-  color: rgb(124, 124, 124);
-  font-family: arial, sans-serif;
+  color: rgba(39, 33, 66, 0.4);
   font-size: 17px;
-  font-weight: 100;
-  height: 19px;
-  line-height: 16px;
-  margin: 0px 5px 5px 0;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin-bottom: 5px;
 }
-/* .temperature {
-  font-size: 44px;
-  padding-left: 45px;
-  font-weight: bold;
-  font-family: arial, sans-serif;
-  height: 20px;
-} */
+
+li::first-letter {
+  text-transform: uppercase;
+}
+
 .temperature {
-  color: rgb(33, 33, 33);
+  color: rgb(10, 165, 152);
   font-family: Cerebri-Sans, Helvetica, Arial, sans-serif;
   font-size: 40px;
   font-weight: 600;
 }
 .unit {
   position: relative;
-  top: -25px;
+  top: -20px;
   font-size: 20px;
 }
 
@@ -69,7 +60,7 @@ li {
 
 div.container {
   max-width: 800px;
-  padding: 50px 100px 0px 100px;
+  margin-top: 60px;
 }
 
 body div.card-border-city {
@@ -80,28 +71,8 @@ body div.card-border-city {
 body div.card-border-weather {
   background: #ffffff;
   padding: 5px 37px 30px 70px;
-  line-height: 60px;
+  line-height: 70px;
 }
-
-/* form input.text-city {
-  background: #ccf9f8;
-  border: 2px solid black;
-  border-radius: 30px;
-  font-size: 19px;
-  padding: 9px;
-  padding-left: 20px;
-  opacity: 0.4;
-} */
-
-/* form input.search {
-  color: black;
-  background: #9eecfa;
-  border: 3px solid #90ebf8;
-  border-radius: 10px;
-  font-size: 20px;
-  padding: 4px 5px;
-  font-family: "Times New Roman", Times, serif;
-} */
 
 div.forecast-day {
   font-size: 23px;
