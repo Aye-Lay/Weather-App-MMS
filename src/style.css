@@ -48,18 +48,16 @@ li::first-letter {
   font-size: 20px;
 }
 
-#celcius-link
-/* #fahrenheit-link { */ {
+#celcius-link {
   text-decoration: none;
 }
 
-#celcius-link:hover
-/* #fahrenheit-link:hover { */ {
+#celcius-link:hover {
   text-decoration: underline;
 }
 
 div.container {
-  max-width: 800px;
+  max-width: 980px;
   margin-top: 60px;
 }
 
@@ -69,7 +67,7 @@ body div.card-border-city {
 }
 
 body div.card-border-weather {
-  background: #ffffff;
+  background: #eaeaea;
   padding: 5px 37px 30px 70px;
   line-height: 70px;
 }
@@ -84,9 +82,6 @@ div.forecast-temperature {
   font-size: 18px;
   font-family: pt monospace;
 }
-div.forecast-icon {
-  font-size: 30px;
-}
 
 #open-source-code {
   color: rgba(12, 0, 0, 0.692);
@@ -97,4 +92,8 @@ div.forecast-icon {
   font-weight: 700;
   line-height: 27px;
   opacity: 0.6;
+}
+
+#forcast {
+  text-align: center;
 }
