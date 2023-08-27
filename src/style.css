@@ -75,14 +75,13 @@ body div.card-border-weather {
 }
 
 div.forecast-day {
-  font-size: 23px;
+  font-size: 20px;
   font-family: pt monospace;
-  color: #1190f8;
-  opacity: 0.8;
+  color: #0e0f0f;
 }
 
 div.forecast-temperature {
-  font-size: 19px;
+  font-size: 18px;
   font-family: pt monospace;
 }
 div.forecast-icon {
@@ -90,5 +89,12 @@ div.forecast-icon {
 }
 
 #open-source-code {
-  color: rgba(248, 9, 9, 0.692);
+  color: rgba(12, 0, 0, 0.692);
+}
+
+.forecast-temperature-min {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 27px;
+  opacity: 0.6;
 }

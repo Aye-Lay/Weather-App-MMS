@@ -21,7 +21,8 @@ function getformatDate(timestamp) {
   return `${day} ${hour}:${minute}`;
 }
 
-function displayForcast() {
+function displayForcast(response) {
+  console.log(response.data.daily);
   let forcastElement = document.querySelector("#forcast");
   let forcastHTML = `<div class="row">`;
   let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
@@ -30,7 +31,7 @@ function displayForcast() {
       forcastHTML +
       `<div class="col">
                 <div class="forecast-day">${day}</div>
-                <div class="forecast-temperature">27°</div>
+                <div class="forecast-temperature"><span class="forecast-temperature-max">34°</span><span class="forecast-temperature-min"> 19°</span></div>
                 <div class="forecast-icon">
                   <i class="fa-sharp fa-solid fa-cloud"></i>
                 </div>
@@ -40,6 +41,14 @@ function displayForcast() {
 
   forcastHTML = forcastHTML + `</div>`;
   forcastElement.innerHTML = forcastHTML;
+}
+
+function getForcast(coordinates) {
+  console.log(coordinates);
+  let apiKey = "ob09c1d70a7b42abct8580f52909b5a3";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?lon=${coordinates.longitude}&lat=${coordinates.latitude}&key=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(displayForcast);
 }
 
 function displayWeatherCondition(response) {
@@ -58,6 +67,7 @@ function displayWeatherCondition(response) {
   document.querySelector("#date").innerHTML = getformatDate(
     response.data.time * 1000
   );
+  getForcast(response.data.coordinates);
 }
 
 function searchCity(city) {
@@ -74,4 +84,3 @@ function searchForm(event) {
 document.querySelector("#search-form").addEventListener("submit", searchForm);
 
 searchCity("Hpa-an");
-displayForcast();
